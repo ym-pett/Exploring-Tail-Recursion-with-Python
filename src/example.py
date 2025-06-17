@@ -24,4 +24,4 @@ def tail_factorial_decorator(n):
         return 1
     else: return n * tail_factorial_decorator.tail_call(n - 1)
 
-print(tail_factorial_decorator(10000))
+#print(tail_factorial_decorator(10000))
