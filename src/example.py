@@ -18,6 +18,7 @@ def tail_factorial(n, accumulator=1):
 
 #print(tail_factorial(10000))
 
+# here we're using the tail_recursive package, and it no longer runs out of memory!
 @tail_recursive
 def tail_factorial_decorator(n):
     if n == 0:
