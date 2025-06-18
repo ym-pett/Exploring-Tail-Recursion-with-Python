@@ -11,12 +11,12 @@ def factorial(n):
 # print(factorial(10000))
 
 # this has tail-recursion syntax, as it uses an accumulator, but it still runs out of memory
-def tail_factorial(n, accumulator=1):
+def tail_recursion_factorial(n, accumulator=1):
     if n == 0: return accumulator
     # we need `accumulator *n` here as we need to carry out the recursed operation on it
-    else: return tail_factorial(n-1, accumulator * n)
+    else: return tail_recursion_factorial(n-1, accumulator * n)
 
-#print(tail_factorial(10000))
+#print(tail_recursion_factorial(10000))
 
 # here we're using the tail_recursive package, and it no longer runs out of memory!
 @tail_recursive
