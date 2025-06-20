@@ -16,5 +16,4 @@ docker build -t tailrec-python .
 docker run -p 8888:8888 tailrec-python
 ```
 TODO: 
-- this currently works fine using VSCode & Docker desktop, but using only command-line, entry point is at notebooks folder instead of \work.
 - map folders so that changes persist from docker to local 

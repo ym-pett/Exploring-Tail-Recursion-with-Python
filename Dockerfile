@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8888
 
 # Start Jupyter Notebook
-CMD ["start-notebook.sh", "--NotebookApp.notebook_dir=/home/jovyan/work/notebooks"]
+CMD ["start-notebook.sh", "--NotebookApp.notebook_dir=/home/jovyan/work/"]
