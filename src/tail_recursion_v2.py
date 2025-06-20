@@ -10,8 +10,8 @@ class Recurse(Exception):
 def recurse(*args, **kwargs):
     """
     instead of calling function recursively, raises a Recurse exception 
-    with the new arguments interrupts the normal flow & signals to the 
-    decorator to recurse with these arguments
+    with the new arguments. This interrupts the normal flow & signals to the 
+    decorator to recurse with the new arguments
     """
     raise Recurse(*args, **kwargs) 
         
